@@ -1,27 +1,48 @@
+/* ==========================================================
+   Reset
+========================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* ==========================================================
+   HTML
+========================================================== */
+
 html {
     scroll-behavior: smooth;
 }
 
+
+/* ==========================================================
+   Body
+========================================================== */
+
 body {
     font-family: Arial, sans-serif;
+
     background: #0f172a;
+
     color: white;
+
     line-height: 1.6;
 }
 
-/* Navigation */
+
+/* ==========================================================
+   Navigation
+========================================================== */
 
 nav {
     position: sticky;
     top: 0;
 
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 
@@ -38,13 +59,18 @@ nav h2 {
     color: #38bdf8;
 }
 
+
+/* เมนู Navigation */
+
 .menu {
     display: flex;
+
     gap: 25px;
 }
 
 .menu a {
     color: white;
+
     text-decoration: none;
 
     transition: 0.3s;
@@ -54,12 +80,16 @@ nav h2 {
     color: #38bdf8;
 }
 
-/* Hero */
+
+/* ==========================================================
+   Hero
+========================================================== */
 
 .hero {
     min-height: 90vh;
 
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 
@@ -72,26 +102,36 @@ nav h2 {
 
 .hero-text p:first-child {
     color: #38bdf8;
+
     font-size: 20px;
 }
 
 .hero h1 {
     font-size: 60px;
+
     margin: 10px 0;
 }
 
 .hero h2 {
     color: #94a3b8;
+
     margin-bottom: 20px;
 }
+
+
+/* ==========================================================
+   ปุ่มทั่วไป
+========================================================== */
 
 .button {
     display: inline-block;
 
     margin-top: 25px;
+
     padding: 12px 25px;
 
     background: #38bdf8;
+
     color: #0f172a;
 
     text-decoration: none;
@@ -105,25 +145,39 @@ nav h2 {
 
 .button:hover {
     background: #7dd3fc;
+
     transform: translateY(-3px);
 }
 
-/* Profile */
+
+/* ==========================================================
+   Profile
+========================================================== */
 
 .profile img {
     width: 300px;
+
     height: 380px;
+
     object-fit: cover;
+
     border-radius: 20px;
+
     border: 4px solid #38bdf8;
-    box-shadow: 0 10px 40px rgba(56, 189, 248, 0.3);
+
+    box-shadow:
+        0 10px 40px
+        rgba(56, 189, 248, 0.3);
 }
 
 
-/* Sections */
+/* ==========================================================
+   Sections
+========================================================== */
 
 section {
     padding: 100px 10%;
+
     min-height: 400px;
 }
 
@@ -137,6 +191,11 @@ section {
     color: #38bdf8;
 }
 
+
+/* ==========================================================
+   About
+========================================================== */
+
 .about-text {
     max-width: 800px;
 
@@ -147,13 +206,16 @@ section {
     color: #cbd5e1;
 }
 
-/* Skills */
+
+/* ==========================================================
+   Skills
+========================================================== */
 
 .skills {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(4, 1fr);
 
     gap: 25px;
 }
@@ -180,175 +242,14 @@ section {
     margin-bottom: 10px;
 }
 
-/* Projects */
 
-.projects {
-    display: grid;
+/* ==========================================================
+   Skill Icons
+========================================================== */
 
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-.project {
-    padding: 30px;
-
-    background: #1e293b;
-
-    border-radius: 12px;
-
-    transition: 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-8px);
-
-    background: #263449;
-}
-
-.project h3 {
-    color: #38bdf8;
-}
-
-/* Contact */
-
-#contact {
-    text-align: center;
-
-    min-height: 400px;
-}
-
-#contact p {
-    margin: 10px;
-
-    color: #cbd5e1;
-}
-
-/* Footer */
-
-footer {
-    padding: 30px;
-
-    text-align: center;
-
-    background: #020617;
-
-    color: #64748b;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    .menu {
-        gap: 12px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .hero {
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 50px;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .profile-circle {
-        width: 200px;
-        height: 200px;
-
-        font-size: 70px;
-    }
-
-    .skills,
-    .projects {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Resume*/
-.resume-image {
-    width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-    margin: 20px 0;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.resume-image:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
-}
-
-.contact-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 25px;
-}
-
-
-/*ไอคอนติดต่อ*/
-.contact-icon {
-    width: 60px;
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 28px;
-    text-decoration: none;
-
-    border-radius: 50%;
-    color: white;
-
-    background: #1877F2;
-
-    transition: 0.3s;
-}
-
-/* Email */
-.contact-icon:first-child {
-    background: #EA4335;
-}
-
-/* Facebook */
-.contact-icon:last-child {
-    background: #1877F2;
-}
-
-/* LINE */
-.line-icon {
-    background-color: #06C755 !important;
-    color: white !important;
-}
-
-.contact-icon:hover {
-    transform: translateY(-5px) scale(1.08);
-}
-
-
-/*สกิลไอคอน*/
 .skill-icon {
     font-size: 45px;
+
     margin-bottom: 15px;
 }
 
@@ -368,29 +269,352 @@ footer {
     color: #777BB4;
 }
 
+
+/* ==========================================================
+   Projects
+========================================================== */
+
+.projects {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.project {
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+
+    background: #263449;
+}
+
+.project h3 {
+    color: #38bdf8;
+
+    margin: 10px 0 15px;
+}
+
+
+/* หมายเลข Project */
+
+.project-number {
+    display: inline-block;
+
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+/* รายละเอียด Project */
+
+.project p {
+    color: #cbd5e1;
+}
+
+
+/* กล่องรายละเอียดโครงการ */
+
+.project-info {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #0f172a;
+
+    border-left: 3px solid #38bdf8;
+
+    border-radius: 6px;
+}
+
+.project-info strong {
+    display: block;
+
+    color: #38bdf8;
+
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    color: #cbd5e1;
+
+    margin: 0;
+}
+
+
+/* ==========================================================
+   ปุ่ม GitHub
+========================================================== */
+
+.github-button {
+    background: #24292f;
+
+    color: white;
+
+    margin-left: 8px;
+}
+
+.github-button:hover {
+    background: #000000;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================================
+   Resume
+========================================================== */
+
+.resume-image {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: contain;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+}
+
+.resume-image:hover {
+    transform: scale(1.02);
+
+    opacity: 0.9;
+}
+
+
 /* Resume ใน About Me */
+
 .resume-about {
     text-align: center;
+
     margin-top: 40px;
 }
 
 .resume-about h3 {
     text-align: center;
+
     color: #38bdf8;
+
     font-size: 28px;
+
     margin-bottom: 10px;
 }
 
 .resume-about p {
     text-align: center;
+
     color: #cbd5e1;
 }
 
 .resume-about .resume-image {
     display: block;
+
     width: 70%;
+
     max-width: 600px;
+
     max-height: 700px;
+
     object-fit: contain;
+
     margin: 20px auto;
+}
+
+
+/* ==========================================================
+   Contact
+========================================================== */
+
+#contact {
+    text-align: center;
+
+    min-height: 400px;
+}
+
+#contact p {
+    margin: 10px;
+
+    color: #cbd5e1;
+}
+
+
+/* กล่อง Contact */
+
+.contact-box {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+
+/* ==========================================================
+   Contact Icons
+========================================================== */
+
+.contact-icon {
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    color: white;
+
+    background: #1877F2;
+
+    transition: 0.3s;
+}
+
+
+/* Email */
+
+.contact-icon:first-child {
+    background: #EA4335;
+}
+
+
+/* Facebook */
+
+.contact-icon:last-child {
+    background: #1877F2;
+}
+
+
+/* LINE */
+
+.line-icon {
+    background-color: #06C755 !important;
+
+    color: white !important;
+}
+
+
+.contact-icon:hover {
+    transform:
+        translateY(-5px)
+        scale(1.08);
+}
+
+
+/* ==========================================================
+   Footer
+========================================================== */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #020617;
+
+    color: #64748b;
+}
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .menu {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .profile img {
+        width: 240px;
+
+        height: 300px;
+    }
+
+
+    .skills,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+
+    .github-button {
+        margin-left: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
 }
