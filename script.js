@@ -4,7 +4,6 @@ My Profile - JavaScript
 
 document.addEventListener("DOMContentLoaded", function () {
 
-```
 console.log("My Profile website loaded successfully.");
 
 // Smooth scrolling
@@ -51,6 +50,5 @@ if (pdfButton) {
     });
 
 }
-```
 
 });
