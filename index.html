@@ -6,21 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>My Profile | กิตติพงษ์ ภัคเกษม</title>
 
-<title>My Profile | กิตติพงษ์ ภัคเกษม</title>
+    <link rel="stylesheet" href="style.css">
 
-<link 
-    rel="stylesheet" href="style.css">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
->
-
-
+    <!-- Font Awesome สำหรับไอคอน -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
-
 
 <!-- Navigation -->
 <nav>
@@ -58,7 +55,6 @@
 
     </div>
 
-
     <div class="profile">
         <img src="profile.jpg" alt="รูปโปรไฟล์">
     </div>
@@ -83,6 +79,31 @@
         ในเวลาว่างชอบเรียนรู้สิ่งใหม่ ๆ
         และพัฒนาทักษะด้านการเขียนโปรแกรม
     </p>
+
+
+    <!-- Resume -->
+    <div class="resume-about">
+
+        <h3>My Resume</h3>
+
+        <p>
+            สามารถคลิกที่รูป Resume
+            เพื่อดูขนาดเต็มได้
+        </p>
+
+        <a
+            href="resume.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="resume.jpg"
+                alt="Resume"
+                class="resume-image"
+            >
+        </a>
+
+    </div>
 
 </section>
 
@@ -116,7 +137,7 @@
 
         <div class="skill">
             <i class="fa-brands fa-php skill-icon"></i>
-            <h3>Php</h3>
+            <h3>PHP</h3>
             <p>จัดการระบบหลังบ้านและฐานข้อมูล</p>
         </div>
 
@@ -132,62 +153,63 @@
         My Projects
     </h2>
 
-<div class="project">
 
-    <span class="project-number">
-        Resume
-    </span>
+    <!-- Project 1 -->
+    <div class="project">
+
+        <span class="project-number">
+            PROJECT 01
+        </span>
+
+        <h3>
+            เว็บไซต์โปรไฟล์ส่วนตัว
+        </h3>
+
+        <p>
+            เว็บไซต์สำหรับนำเสนอข้อมูลส่วนตัว
+            ทักษะ ความสามารถ และผลงาน
+            ในรูปแบบ Portfolio
+        </p>
+
+    </div>
 
 
-    <!-- คลิกรูปเพื่อดู Resume ขนาดเต็ม -->
-    <a href="resume.jpg" target="_blank" rel="noopener noreferrer">
-        <img
-            src="resume.jpg"
-            alt="Resume"
-            class="resume-image"
-        >
-    </a>
+    <!-- Project 2 -->
+    <div class="project">
 
-</div>
+        <span class="project-number">
+            PROJECT 02
+        </span>
 
+        <h3>
+            ระบบบันทึกการจัดการปัญหาเครื่องจักรหยุดทำงาน
+        </h3>
 
+        <p>
+            โปรเจกต์สำหรับบันทึกและจัดการข้อมูล
+            เกี่ยวกับปัญหาเครื่องจักรหยุดทำงาน
+            เพื่อช่วยในการจัดเก็บข้อมูลและติดตามปัญหา
+        </p>
 
-        <!-- Project 2 -->
-        <div class="project">
+        <div class="project-info">
 
-            <span class="project-number">
-                PROJECT 02
-            </span>
-
-            <h3>
-                ระบบบันทึกการจัดการปัญหาเครื่องจักรหยุดทำงาน
-            </h3>
+            <strong>รายละเอียดโครงการ</strong>
 
             <p>
-                โปรเจกต์สำหรับบันทึกและจัดการข้อมูล
-                เกี่ยวกับปัญหาเครื่องจักรหยุดทำงาน
-                เพื่อช่วยในการจัดเก็บข้อมูลและติดตามปัญหา
+                สามารถดูรายละเอียดของโครงการ
+                ได้จากเอกสาร PDF
             </p>
 
-            <div class="project-info">
-                <strong>รายละเอียดโครงการ</strong>
-
-                <p>
-                    สามารถดูรายละเอียดของโครงการ
-                    ได้จากเอกสาร PDF
-                </p>
-            </div>
-
-            <a
-                href="checkin.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button pdf-button"
-            >
-                📄 ดูรายละเอียดโครงการ (PDF)
-            </a>
-
         </div>
+
+        <a
+            href="checkin.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button pdf-button"
+        >
+            📄 ดูรายละเอียดโครงการ (PDF)
+        </a>
 
     </div>
 
@@ -203,6 +225,7 @@
 
     <div class="contact-box">
 
+        <!-- Email -->
         <a
             href="mailto:Kttph.94@gmail.com"
             class="contact-icon"
@@ -211,6 +234,8 @@
             <i class="fa-solid fa-envelope"></i>
         </a>
 
+
+        <!-- Facebook -->
         <a
             href="https://facebook.com/kttph.904"
             target="_blank"
@@ -219,7 +244,10 @@
             title="Facebook"
         >
             <i class="fa-brands fa-facebook"></i>
+        </a>
 
+
+        <!-- LINE -->
         <a
             href="https://line.me/ti/p/~kttph.94"
             target="_blank"
@@ -237,13 +265,16 @@
 
 <!-- Footer -->
 <footer>
+
     <p>
         © 2026 My Profile. All Rights Reserved.
     </p>
+
 </footer>
 
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -367,3 +367,30 @@ footer {
 .skill:nth-child(4) .skill-icon {
     color: #777BB4;
 }
+
+/* Resume ใน About Me */
+.resume-about {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.resume-about h3 {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.resume-about p {
+    text-align: center;
+    color: #cbd5e1;
+}
+
+.resume-about .resume-image {
+    display: block;
+    width: 70%;
+    max-width: 600px;
+    max-height: 700px;
+    object-fit: contain;
+    margin: 20px auto;
+}
