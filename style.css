@@ -618,3 +618,66 @@ footer {
     }
 
 }
+
+```css
+/* แกลเลอรีภาพหน้าจอโปรเจกต์ */
+.project-screenshots {
+    margin-top: 24px;
+}
+
+.project-screenshots h4 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.project-screenshots > p {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+/* จัดภาพเป็นตาราง 2 คอลัมน์ */
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.screenshot-grid a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    background: rgba(148, 163, 184, 0.12);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.screenshot-grid a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top;
+}
+
+.screenshot-grid span {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: inherit;
+}
+
+/* ปรับให้เหมาะกับมือถือ */
+@media (max-width: 600px) {
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+}
+```
